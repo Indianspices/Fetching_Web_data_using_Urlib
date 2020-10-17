@@ -8,9 +8,8 @@ mysock.send(cmd)
 
 while True:
     data = mysock.recv(512)
-    if len(data) < 1:
+    if len(data) <= 1:
         break
     print(data.decode(),end='')
-    print('All done....')
 
 mysock.close()
