@@ -1,6 +1,8 @@
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
+import numpy as np
+import matplotlib
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
@@ -15,3 +17,4 @@ soup = BeautifulSoup(html, 'html.parser')
 tags = soup('span class="comments"')
 for tag in tags:
     print(tag)
+    
