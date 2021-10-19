@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import ssl
 import numpy as np
 import matplotlib
+import pytorch
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
