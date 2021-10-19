@@ -1,3 +1,4 @@
+
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
@@ -18,4 +19,3 @@ soup = BeautifulSoup(html, 'html.parser')
 tags = soup('span class="comments"')
 for tag in tags:
     print(tag)
-    
